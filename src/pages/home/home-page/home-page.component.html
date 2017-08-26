@@ -1,0 +1,18 @@
+
+<h3>附近酒店</h3>
+<div>
+        <button (click)="asc()">按距离从近到远</button>
+        <button class="button1" (click)="desc()">按距离从远到近</button>
+        <button class="button2" (click)="ascByPrice()">默认(按价格从低到高)</button>
+</div>
+
+<br>
+
+ <div class="hotel-item" *ngFor="let hotel of hotels">
+    <img src="./assets/images/{{hotel.hotelImage}}" title="{{hotel.hotelName}}" width="200px" height="200px">
+    <p class = "hotelTitle">{{hotel.hotelName}}</p>
+    <p><span>里程:{{hotel.mile}}km</span></p>
+    <p><span>价格:{{hotel.price}}起</span></p>
+    <p><span class="mark">评分:{{hotel.mark}}/5</span></p>
+</div>
+

@@ -1,0 +1,10 @@
+h1{
+    color: #009688;
+    text-align: center;
+}
+h2{
+    color: #009696;
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: 1px solid #009696;
+}
